@@ -30,6 +30,6 @@ class PostRepository implements PostRepositoryInterface
 
     public function all()
     {
-        return Post::all();
+        return Post::orderBy('created_at', 'DESC')->get();
     }
 }

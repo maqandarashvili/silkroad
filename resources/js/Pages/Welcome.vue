@@ -65,7 +65,7 @@ import SearchBar from "@/Components/SearchBar.vue";
                                 <SearchBar @searchResponse="displaySearchResult"></SearchBar>
                             </div>
 
-                            <div class="relative gap-6 lg:items-start flex w-full flex-1 items-stretch">
+                            <div class="search-items-wrapper relative gap-6 lg:items-start flex w-full flex-1 items-stretch">
                                 <div id="docs-card-content" class="flex items-start gap-6 lg:flex-col">
 
                                     <div v-if="search.users" class="pt-3 sm:pt-5 lg:pt-0"
@@ -199,6 +199,23 @@ export default {
 <style scoped>
 .home-posts-wrapper {
     overflow-y: scroll;
-    min-height: 100%;
+    max-height: 45rem;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.home-posts-wrapper::-webkit-scrollbar {
+    display: none;
+}
+#docs-card{
+    max-height: 45rem;
+}
+.search-items-wrapper{
+    min-height: 45rem;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.search-items-wrapper::-webkit-scrollbar {
+    display: none;
 }
 </style>
