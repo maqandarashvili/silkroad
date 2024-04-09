@@ -1,4 +1,4 @@
-# Laravel Tnet Exam
+# Laravel Silkroad Exam
 
 This is guide how to set up project
 
@@ -26,7 +26,7 @@ npm install
 npm run:dev
 ```
 
-## Step 4:
+## Step 5:
 
 ```bash
 php artisan serve
