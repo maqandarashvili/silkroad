@@ -24,6 +24,7 @@ export default {
             axios.post('/posts', this.form)
                 .then(response => {
                     this.form.body = '';
+                    window.location.replace('/posts');
                 })
                 .catch(error => {
                     console.error(error.response.data);
